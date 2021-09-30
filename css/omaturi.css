@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif JP', serif;
+}
+
+body {
+  position: relative;
+}
+
+header img {
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
+}
+
+main {
+  position: relative;
+}
+
+.subtitle-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vertical-line {
+  width: 3px;
+  height: 140px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-color: #1b1b1b;
+}
+
+h2 {
+  writing-mode: vertical-rl;
+  font-size: 36px;
+  letter-spacing: 0.8rem;
+  color: #1B1B1B;
+  font-weight: 10;
+  margin: 0 auto;
+}
+
+/* h2下の水平線の設定 */
+.horizon {
+  margin: 15px auto;
+  width: 80px;
+  height: 1px;
+  background-color: #8F8633;
+}
+
+#back-title {
+  position: absolute;
+  font-size: 72px;
+  line-height: 103px;
+  text-align: center;
+  letter-spacing: 0.625em;
+  color: #C6C6C6;
+  font-weight: 400;
+  left: 108px;
+  top: 182px;
+}

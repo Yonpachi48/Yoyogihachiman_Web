@@ -1,0 +1,647 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif JP', serif;
+}
+
+body {
+  position: relative;
+}
+
+/* firstViewの設定 */
+header {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 1;
+}
+
+/* サイドバーの設定 */
+.sidebar {
+  position: relative;
+  width: 230px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  color: #1b1b1b;
+}
+
+.sidebar #side-top {
+  writing-mode: vertical-rl;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 100;
+  margin: 110px auto;
+  color: #1b1b1b;
+  letter-spacing: 0.5rem;
+}
+
+.sidebar nav {
+  margin-top: 170px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav a {
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.2em;
+  color: #1b1b1b;
+}
+
+/* ボタンの設定 */
+a {
+  text-decoration: none;
+}
+
+.mainbar a {
+  padding: 15px 62px;
+  font-weight: 100;
+  border: 0.5px solid #1b1b1b;
+  display: inline-block;
+}
+
+/* メインのコンテンツの設定 */
+.mainbar {
+  width: calc(100vw - 230px);
+  height: 100vh;
+  position: relative;
+  background-color: #fafafa;
+  z-index: 1;
+  color: #1b1b1b;
+}
+
+/* firstViewの設定 */
+.bg-switcher {
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-switcher h1 {
+  color: #fafafa;
+  font-size: 64px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 64px;
+  line-height: 92px;
+  letter-spacing: 0.3em;
+}
+
+
+main {
+  position: relative;
+}
+
+/* メインコンテンツの設定 */
+.main-contents {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 0.3em;
+  color: #1B1B1B;
+  font-weight: 10;
+}
+
+/* お知らせの設定 */
+#info-line-top {
+  margin: 0 auto;
+  margin-top: 260px;
+  margin-bottom: 53px;
+  width: 863px;
+  height: 1px;
+  background-color: #8F8633;
+}
+
+#infomation p {
+  margin: 0 auto;
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  width: 720px;
+}
+
+#infomation br {
+  display: block;
+  content: "";
+  margin: 36px 0;
+}
+
+#infomation a {
+  border: none;
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  letter-spacing: 0.2em;
+  text-decoration-line: underline;
+  color: #1b1b1b;
+}
+
+#info-line-under {
+  margin: 0 auto;
+  margin-top: 53px;
+  width: 863px;
+  height: 1px;
+  background-color: #8F8633;
+}
+
+/* h2下の水平線の設定 */
+.horizon {
+  margin: 15px auto;
+  width: 80px;
+  height: 1px;
+  background-color: #8F8633;
+}
+
+/* 由緒の設定 */
+#yuisyo-content {
+  margin-top: 240px;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-contents {
+  width: 672px;
+  height: 452px;
+  background: rgba(37, 68, 60, 0.8);
+  position: absolute;
+  left: 360px;
+  z-index: 31;
+  margin-top: 179px;
+}
+
+#yuisyo img {
+  position: absolute;
+  z-index: 30;
+  right: 297px;
+  margin-top: 56px;
+  width: 690px;
+}
+
+.text-contents h4 {
+  color: #fafafa;
+  font-size: 14;
+  text-align: center;
+  letter-spacing: 0.515em;
+  font-weight: 200;
+  margin-top: 58px;
+}
+
+.text-contents .horizon {
+  width: 192px;
+  background-color: #fafafa;
+  margin-bottom: 49.5px;
+}
+
+.text-contents p {
+  width: 548px;
+  color: #fafafa;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  line-height: 50px;
+  margin: 0 auto;
+  font-weight: 100;
+}
+
+#yuisyo-line-box {
+  margin-top: 14.5px;
+  position: absolute;
+  right: 46px;
+}
+
+.main-a-line {
+  width: 66px;
+  height: 1px;
+  position: absolute;
+  left: -26px;
+  top: 50%;
+  background-color: #fafafa;
+}
+
+.text-contents a {
+  border-color: #fafafa;
+  color: #fafafa;
+}
+
+
+/* お祭りの設定 */
+#omaturi {
+  width: calc(100vw - 230px);
+  display: flex;
+  justify-content: center;
+}
+
+#omaturi-text {
+  position: relative;
+}
+
+.subtitle-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vertical-line {
+  width: 3px;
+  height: 140px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-color: #1b1b1b;
+}
+
+#omaturi .horizon {
+  width: 123px;
+}
+
+#omaturi img {
+  width: 555px;
+  height: 750px;
+  background-color: #fafafa;
+  margin-top: 110px;
+}
+
+#right-text {
+  margin-top: 400px;
+  margin-left: 50px;
+}
+
+#omaturi p {
+  width: 500px;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.2em;
+}
+
+#omaturi br {
+  display: block;
+  content: "";
+  margin: 36px 0;
+}
+
+#omaturi-line-box {
+  position: relative;
+  margin-top: 141px;
+  margin-left: 310px;
+}
+
+#omaturi-info {
+  color: #1b1b1b;
+}
+
+#omaturi-line-box .main-a-line {
+  background-color: #1b1b1b;
+}
+
+
+/* ご祈願の設定 */
+#gokigan {
+  display: flex;
+  justify-content: center;
+}
+
+#gokigan .horizon {
+  width: 123px;
+}
+
+#gokigan-text {
+  position: relative;
+}
+
+#left-text {
+  margin-top: 390px;
+  margin-right: 50px;
+}
+
+#gokigan-text p {
+  width: 500px;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.2em;
+}
+
+#gokigan-line-box {
+  margin-top: 141px;
+  position: relative;
+  width: 190px;
+}
+
+#gokigan-info {
+  color: #1b1b1b;
+}
+
+#gokigan-line-box .main-a-line {
+  background-color: #1b1b1b;
+}
+
+#gokigan img {
+  width: 555px;
+  height: 750px;
+  margin-top: 115px;
+}
+
+/* 七五三・結婚式の設定 */
+#last-content {
+  height: calc(100vh + 426px);
+  background-color: #FAFAFA;
+}
+
+#wedding-shichigosan .horizon {
+  width: 296px;
+}
+
+#wedding-contents {
+  width: 1130px;
+  height: 659px;
+  margin: 0 auto;
+  position: relative;
+  background: rgba(36, 67, 59, 0.9);
+  margin-top: 276px;
+}
+
+#wedding-contents img {
+  position: absolute;
+  width: 233px;
+  height: 321px;
+}
+
+#wedding-contents p {
+  position: absolute;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.2em;
+  color: #FAFAFA;
+  width: 300px;
+}
+
+#wedding-contents a {
+  font-size: 10px;
+  padding: 7px 30px;
+  color: #fafafa;
+  border-color: #fafafa;
+}
+
+h3 {
+  position: absolute;
+  color: #fafafa;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+#shichigosan h3 {
+  left: 343px;
+  top: 64px;
+}
+
+#shichigosan p {
+  right: 488px;
+  top: 124px;
+}
+
+#shichigosan-line-box {
+  position: absolute;
+  right: 504px;
+  top: 227px;
+}
+
+#shichigosan-line-box .main-a-line {
+  width: 27px;
+  left: -9px;
+}
+
+#shichigosan img {
+  width: 233px;
+  left: 765px;
+  top: -27px;
+}
+
+#wedding img {
+  width: 233px;
+  left: 179px;
+  top: 360px;
+}
+
+#wedding h3 {
+  left: 492px;
+  top: 410px;
+}
+
+#wedding p {
+  left: 492px;
+  top: 471px;
+}
+
+#wedding-line-box {
+  position: absolute;
+  left: 685px;
+  top: 544px;
+}
+
+#wedding-line-box .main-a-line{
+  width: 27px;
+  left: -9px;
+}
+
+/* footerの設定 */
+footer {
+  position: relative;
+  height: 654px;
+  background: #333333;
+}
+
+#contacts {
+  width: 722px;
+  height: 459px;
+  position: absolute;
+  right: 0;
+  top: -173px;
+  background: #24433B;
+  z-index: 30;
+}
+
+#contacts h2 {
+  position: absolute;
+  left: 109px;
+  top: 70px;
+  font-size: 28px;
+  color: #fafafa;
+  z-index: 32;
+  margin: 0;
+}
+
+#contacts p {
+  position: absolute;
+  left: 109px;
+  top: 174px;
+  width: 503px;
+  line-height: 34px;
+  letter-spacing: 0.2em;
+  color: #fafafa;
+  z-index: 32;
+}
+
+#contacts br {
+  display: block;
+  content: "";
+  margin: 28px 0;
+}
+
+#contacts-line-box {
+  position: absolute;
+  left: 469px;
+  top: 369px;
+  z-index: 32;
+}
+
+#contacts-line-box .main-a-line {
+  width: 48px;
+  left: -18px;
+}
+
+#contacts a {
+  color: #fafafa;
+  font-size: 14px;
+  padding: 12px 48px;
+  border: 0.5px solid rgba(250, 250, 250, 0.95);
+}
+
+#footer-a  {
+  position: absolute;
+  font-size: 48px;
+  line-height: 69px;
+  letter-spacing: 0.56em;
+  color: #FAFAFA;
+  font-weight: 100;
+  left: 142px;
+  top: 142px;
+}
+
+footer nav {
+  list-style: none;
+  position: absolute;
+  left: 220px;
+  top: 327px;
+}
+
+footer nav a {
+  color: #fafafa;
+  font-size: 23px;
+  letter-spacing: 0.2em;
+  font-weight: 100;
+  text-align: center;
+  width: 260px;
+}
+
+.top-list {
+  width: 1090px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-list a {
+  display: inline-block;
+  width: 260px;
+}
+
+.under-list {
+  margin-top: 64px;
+  width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.under-list a {
+  display: inline-block;
+  width: 260px;
+}
+
+
+/* ホバーアクションの記述 */
+.line-box:hover .moreinfo {
+  background-color: #1b1b1b;
+  color: #fafafa;
+  border-color: #1b1b1b;
+}
+
+.line-box:hover .main-a-line {
+  background-color: #8F8633;
+}
+
+#omaturi-line-box:hover #omaturi-a-line {
+  background-color: #8F8633;
+}
+
+#omaturi-line-box:hover #omaturi-info {
+  color: #fafafa;
+}
+
+#gokigan-line-box:hover #gokigan-a-line {
+  background-color: #8F8633;
+}
+
+#gokigan-line-box:hover #gokigan-info {
+  color: #fafafa;
+}
+
+#shichigosan-line-box:hover #shichigosan-info {
+  border-color: #1b1b1b;
+}
+
+#wedding-line-box:hover #wedding-info {
+  border-color: #1b1b1b;
+}
+
+#contacts-line-box:hover #contacts-info{
+  border-color: #1b1b1b;
+}
+
+/*サイドバーのホバーアクション*/
+@keyframes hover-line {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translateY(2px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.hover-line {
+  position: relative;
+}
+
+.hover-line:hover::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #8F8633;
+  animation-name: hover-line;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
