@@ -6,6 +6,7 @@
 
 body {
   position: relative;
+  background-color: #fafafa;
 }
 
 header img {
@@ -16,6 +17,10 @@ header img {
 
 main {
   position: relative;
+}
+
+a {
+  text-decoration: none;
 }
 
 .subtitle-line {
@@ -36,7 +41,7 @@ main {
   background-color: #1b1b1b;
 }
 
-h2 {
+.subtitle-line h2 {
   writing-mode: vertical-rl;
   font-size: 36px;
   letter-spacing: 0.8rem;
@@ -63,4 +68,439 @@ h2 {
   font-weight: 400;
   left: 108px;
   top: 182px;
+}
+
+/*listの設定*/
+#list-contents {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 658px;
+}
+
+#list-box {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 426px;
+}
+
+#left-list {
+  margin: 0 76.5px;
+}
+
+#right-list {
+  margin: 0 76.5px;
+}
+
+.list {
+  width: 610px;
+  position: relative;
+  margin-top: 200px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #1b1b1b;
+  text-align: center;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 11px;
+  left: 0;
+  font-weight: 100;
+}
+
+.detail {
+  font-size: 24px;
+  font-weight: 100;
+  color: #1b1b1b;
+  text-align: center;
+}
+
+.top-line {
+  width: 411px;
+  height: 0;
+  border: 1px dashed #1B1B1B;
+  position: absolute;
+  left: 57px;
+  top: 25px;
+}
+
+.first-text {
+  position: absolute;
+  left: calc(563px / 2);
+  transform: translateX(-50%);
+  top: 63px;
+  text-decoration: none;
+}
+
+.first-line {
+  width: 260px;
+  height: 0;
+  border: 1px dashed #1B1B1B;
+  position: absolute;
+  left: 32px;
+  top: 135px;
+}
+
+.second-text {
+  position: absolute;
+  left: calc(563px / 2);
+  transform: translateX(-50%);
+  top: 173px;
+  text-decoration: none;
+}
+
+.second-line {
+  width: 260px;
+  height: 0;
+  border: 1px dashed #1B1B1B;
+  position: absolute;
+  left: 237px;
+  top: 245px;
+}
+
+.third-text {
+  position: absolute;
+  left: calc(563px / 2);
+  transform: translateX(-50%);
+  top: 283px;
+  text-decoration: none;
+}
+
+.bottom-line {
+  width: 411px;
+  height: 0;
+  border: 1px dashed #1B1B1B;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.month-text {
+  font-size: 36px;
+  color: #1b1b1b;
+  letter-spacing: 0.2em;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 11px;
+  left: 521px;
+}
+
+.right-line {
+  width: 0;
+  border: 1px dashed #1B1B1B;
+}
+
+/*睦月の設定*/
+#list-mutuki {
+  height: 245px;
+  margin-top: 0;
+}
+
+#list-mutuki .right-line {
+  height: 131px;
+  position: absolute;
+  left: 563px;
+  top: 104px;
+}
+
+/*如月の設定*/
+#list-kisaragi {
+  height: 344px;
+}
+
+#list-kisaragi .right-line {
+  height: 242px;
+  position: absolute;
+  left: 563px;
+  top: 104px;
+}
+
+/*弥生の設定*/
+#list-yayoi {
+  height: 124px;
+}
+
+#list-yayoi .right-line {
+  height: 20px;
+  position: absolute;
+  left: 563px;
+  top: 104px;
+}
+
+/*皐月の設定*/
+#list-satuki {
+  height: 245px;
+}
+
+#list-satuki .right-line {
+  height: 131px;
+  position: absolute;
+  left: 563px;
+  top: 104px;
+}
+
+/*水無月の設定*/
+#list-minaduki {
+  height: 124px;
+}
+
+#list-minaduki .month-text {
+  width: 130px;
+  top: 30px;
+  left: 500px;
+}
+
+#list-minaduki .right-line {
+  height: 0;
+  position: absolute;
+  left: 563px;
+  top: 104px;
+  display: none;
+}
+
+/*長月の設定*/
+#list-nagatuki {
+  height: 344px;
+}
+
+#list-nagatuki .right-line {
+  height: 242px;
+  position: absolute;
+  left: 563px;
+  top: 104px;
+}
+
+/*霜月の設定*/
+#list-shimotuki {
+  height: 124px;
+}
+
+#list-shimotuki .right-line {
+  height: 20px;
+  position: absolute;
+  left: 563px;
+  top: 104px;
+}
+
+/*師走の設定*/
+#list-shiwasu {
+  height: 245px;
+}
+
+#list-shiwasu .right-line {
+  height: 131px;
+  position: absolute;
+  left: 563px;
+  top: 104px;
+}
+
+/* footerの設定 */
+footer {
+  position: relative;
+  height: 654px;
+  background: #333333;
+}
+
+#contacts {
+  width: 722px;
+  height: 459px;
+  position: absolute;
+  right: 0;
+  top: -173px;
+  background: #24433B;
+  z-index: 30;
+}
+
+#contacts h2 {
+  position: absolute;
+  left: 109px;
+  top: 70px;
+  font-size: 28px;
+  color: #fafafa;
+  z-index: 32;
+  margin: 0;
+  font-weight: 100;
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+
+#contacts p {
+  position: absolute;
+  left: 109px;
+  top: 174px;
+  width: 503px;
+  line-height: 34px;
+  letter-spacing: 0.2em;
+  color: #fafafa;
+  z-index: 32;
+}
+
+#contacts br {
+  display: block;
+  content: "";
+  margin: 28px 0;
+}
+
+#contacts-line-box {
+  position: absolute;
+  left: 469px;
+  top: 369px;
+  z-index: 32;
+}
+
+.main-a-line {
+  width: 66px;
+  height: 1px;
+  position: absolute;
+  left: -26px;
+  top: 50%;
+  background-color: #fafafa;
+}
+
+#contacts-line-box .main-a-line {
+  width: 48px;
+  left: -18px;
+}
+
+#contacts a {
+  color: #fafafa;
+  font-size: 14px;
+  padding: 12px 48px;
+  border: 0.5px solid rgba(250, 250, 250, 0.95);
+}
+
+#footer-a  {
+  position: absolute;
+  font-size: 48px;
+  line-height: 69px;
+  letter-spacing: 0.56em;
+  color: #FAFAFA;
+  font-weight: 100;
+  left: 142px;
+  top: 142px;
+}
+
+footer nav {
+  list-style: none;
+  position: absolute;
+  left: 220px;
+  top: 327px;
+}
+
+footer nav a {
+  color: #fafafa;
+  font-size: 23px;
+  letter-spacing: 0.2em;
+  font-weight: 100;
+  text-align: center;
+  width: 260px;
+}
+
+.top-list {
+  width: 1090px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-list a {
+  display: inline-block;
+  width: 260px;
+}
+
+.under-list {
+  margin-top: 64px;
+  width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.under-list a {
+  display: inline-block;
+  width: 260px;
+}
+
+/* ホバーアクションの記述 */
+.line-box:hover .moreinfo {
+  background-color: #1b1b1b;
+  color: #fafafa;
+  border-color: #1b1b1b;
+}
+
+.line-box:hover .main-a-line {
+  background-color: #8F8633;
+}
+
+#contacts-line-box:hover #contacts-info{
+  border-color: #1b1b1b;
+}
+
+@keyframes hover-line {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translateY(2px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.hover-line {
+  position: relative;
+}
+
+.hover-line:hover::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #8F8633;
+  animation-name: hover-line;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes detail {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translate(-20px, 15px);
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+}
+
+.detail{
+  position: relative;
+}
+
+.detail:hover {
+  color: #FAFAFA;
+}
+
+.detail:hover::after {
+  content: ' ';
+  position: absolute;
+  top: -63px;
+  left: -107px;
+  width: 573px;
+  height: 126px;
+  background: rgba(37, 68, 60, 0.8);
+  animation-name: detail;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: -1;
 }
