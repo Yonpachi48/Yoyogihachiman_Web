@@ -422,6 +422,15 @@ footer nav a {
   width: 260px;
 }
 
+small {
+  color: #FAFAFA;
+  letter-spacing: 0.1em;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* ホバーアクションの記述 */
 .line-box:hover .moreinfo {
   background-color: #1b1b1b;
@@ -503,4 +512,17 @@ footer nav a {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   z-index: -1;
+}
+
+/*jsアニメーション*/
+.js-animation {
+  opacity: 0;
+  transition-duration: 500ms;
+  transform: translate(0, 50px);
+  transition-property: opacity, transform;
+}
+
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
 }
