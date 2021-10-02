@@ -517,7 +517,7 @@ small {
 /*jsアニメーション*/
 .js-animation {
   opacity: 0;
-  transition-duration: 500ms;
+  transition-duration: 1200ms;
   transform: translate(0, 50px);
   transition-property: opacity, transform;
 }
