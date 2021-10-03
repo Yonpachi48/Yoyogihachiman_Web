@@ -23,7 +23,7 @@ a {
   text-decoration: none;
 }
 
-.subtitle-line.js-animation {
+.subtitle-line{
   position: absolute;
   left: 0;
   right: 0;
@@ -71,7 +71,7 @@ a {
 }
 
 /*listの設定*/
-#list-contents.js-animation {
+#list-contents {
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -512,17 +512,4 @@ small {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   z-index: -1;
-}
-
-/*jsアニメーション*/
-.js-animation {
-  opacity: 0;
-  transition-duration: 1200ms;
-  transform: translate(0, 50px);
-  transition-property: opacity, transform;
-}
-
-.scroll-in {
-  opacity: 1;
-  transform: translate(0, 0);
 }
