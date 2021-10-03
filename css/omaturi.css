@@ -23,7 +23,7 @@ a {
   text-decoration: none;
 }
 
-.subtitle-line {
+.subtitle-line.js-animation {
   position: absolute;
   left: 0;
   right: 0;
@@ -71,7 +71,7 @@ a {
 }
 
 /*listの設定*/
-#list-contents {
+#list-contents.js-animation {
   width: 100vw;
   display: flex;
   justify-content: center;

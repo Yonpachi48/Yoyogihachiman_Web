@@ -844,7 +844,7 @@ small {
 
   /*詳細ボタンの設定*/
   .mainbar a {
-    font-size: 12px;
+    font-size: 10px;
     padding: 14px 53px;
     font-weight: 100;
     text-align: center;
@@ -930,7 +930,7 @@ small {
   }
 
   #left-text {
-    margin-top: calc(475 / 1195 * 100vh);
+    margin-top: calc(430 / 1195 * 100vh);
     margin-right: 0;
     display: flex;
     align-items: center;
@@ -967,15 +967,20 @@ small {
 
 #wedding-contents {
   width: 100vw;
-  height: 100vh;
+  height: 96.5vh;
   margin: 0 auto;
-  margin-top: 0;
+  margin-top: 3.5vh;
+  z-index: -2;
 }
 
 #wedding-contents img {
   position: absolute;
-  width: 233px;
-  height: 321px;
+  width: calc(100vw / 2 - (43 / 553 * 100vw));
+  height: calc((100vw / 2 - (43 / 553 * 100vw)) * 1.24);
+  top: 0;
+  left: 50%;
+  transform: translateX(100%);
+  z-index: -1;
 }
 
 #wedding-contents p {
@@ -1023,9 +1028,12 @@ h3 {
 }
 
 #shichigosan img {
-  width: 233px;
-  left: 765px;
-  top: -27px;
+  position: absolute;
+  width: calc(100vw / 2 - (43 / 553 * 100vw));
+  height: calc((100vw / 2 - (43 / 553 * 100vw)) * 1.24);
+  top: 0;
+  left: 50%;
+  z-index: -1;
 }
 
 #wedding img {
